@@ -56,7 +56,7 @@ unsigned char encryptkey[16]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}; // The ve
 
 //Declare instances and functions
 
-Blynk timer;
+BlynkTimer timer;
 void initRF(float f = 868.0);
 void blinkLED(void);
 
@@ -76,7 +76,7 @@ void initRF(float f)
 
 void blinkLED(void)
 {
-  //!digitalWrite(LED);
+  digitalWrite(LED, !digitalRead(LED));
 }
 
 // This function will run every time Blynk connection is established
@@ -113,11 +113,13 @@ void setup()
 {
   // Debug console
   Serial.begin(115200);
+  
+  pinMode(LED, OUTPUT);
   timer.setInterval(800, blinkLED);
 
   initRF(frequency);
 
-  Blynk.begin(auth, ssid, pass);
+  //Blynk.begin(auth, ssid, pass);
   // You can also specify server:
   //Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 80);
   //Blynk.begin(auth, ssid, pass, IPAddress(192,168,1,100), 8080);
@@ -126,6 +128,7 @@ void setup()
 void loop()
 {
   Blynk.run();
+  timer.run();
 
   if (myDriver.available()) {
     // Should be a message for us now   
