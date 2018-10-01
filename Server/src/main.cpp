@@ -113,16 +113,17 @@ void setup()
 {
   // Debug console
   Serial.begin(115200);
-  
+
   pinMode(LED, OUTPUT);
+  
   timer.setInterval(800, blinkLED);
 
-  initRF(frequency);
+  WiFi.begin(ssid, pass);
+  if(WiFi.status());
 
-  //Blynk.begin(auth, ssid, pass);
-  // You can also specify server:
-  //Blynk.begin(auth, ssid, pass, "blynk-cloud.com", 80);
-  //Blynk.begin(auth, ssid, pass, IPAddress(192,168,1,100), 8080);
+  initRF(frequency);
+  
+  Blynk.config(auth);
 }
 
 void loop()
