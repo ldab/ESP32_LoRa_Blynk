@@ -27,7 +27,7 @@
   //#define BOARD_LED_PIN_G           26
   //#define BOARD_LED_PIN_B           25
   //#define BOARD_LED_PIN_WS2812      33                    // Set if your LED is WS2812 RGB
-  #define BOARD_LED_INVERSE           false                 // true if LED is common anode, false if common cathode
+  #define BOARD_LED_INVERSE           true                 // true if LED is common anode, false if common cathode
   #define BOARD_LED_BRIGHTNESS        64                    // 0..255 brightness control
 
 #elif defined(USE_WROVER_BOARD)

@@ -3,5 +3,34 @@
         "PATH": "C:\\Code\\GitHub\\.platformio\\penv\\Scripts;C:\\Code\\GitHub\\.platformio\\penv;C:\\Users\\leonardo\\AppData\\Roaming\\Python\\Python37\\Scripts;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Windows\\System32;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\;C:\\Program Files\\heroku\\bin;C:\\Users\\leonardo\\AppData\\Roaming\\Python\\Python37\\Scripts;C:\\Users\\leonardo\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\leonardo\\AppData\\Local\\atom\\bin;C:\\Users\\leonardo\\AppData\\Roaming\\Python\\Python37\\Scripts;C:\\Python37\\Scripts\\;C:\\Python37\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Git\\cmd;C:\\Windows\\System32;;C:\\Program Files\\Microsoft VS Code\\bin;C:\\;C:\\Program Files\\heroku\\bin;C:\\Users\\leonardo\\AppData\\Roaming\\Python\\Python37\\Scripts;C:\\Users\\leonardo\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\leonardo\\AppData\\Local\\atom\\bin",
         "PLATFORMIO_CALLER": "vscode"
     },
-    "C_Cpp.dimInactiveRegions": false
+    "C_Cpp.dimInactiveRegions": false,
+    "cSpell.enabledLanguageIds": [
+        "asciidoc",
+        "c",
+        "cpp",
+        "csharp",
+        "css",
+        "go",
+        "handlebars",
+        "html",
+        "ini",
+        "jade",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "latex",
+        "less",
+        "markdown",
+        "php",
+        "plaintext",
+        "pub",
+        "python",
+        "restructuredtext",
+        "rust",
+        "scss",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yml"
+    ]
 }
